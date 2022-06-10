@@ -5,10 +5,14 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.context.request.WebRequest;
 
 import com.abn.amro.recipe.util.Utility;
+/**
+ * This class is used for handles the Specific Custom Exceptions and Global Exceptions.
+ * @author gpvkki
+ *
+ */
 
 @ControllerAdvice
 public class GlobalExceptionHandler {

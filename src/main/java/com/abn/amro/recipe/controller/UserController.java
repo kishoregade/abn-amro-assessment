@@ -48,9 +48,6 @@ public class UserController {
 	  return userService.getAllUsers();
   }
   
- 
-  public User getLoggedInUser(Principal principal) {
-	  return userService.getLoggedinUser(principal);
-  }
+
  
 }

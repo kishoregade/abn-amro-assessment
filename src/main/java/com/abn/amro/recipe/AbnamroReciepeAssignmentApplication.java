@@ -32,12 +32,12 @@ public class AbnamroReciepeAssignmentApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-		Role role = Role.builder().rolename("ROLE_USER").build();
+		Role role = Role.builder().rolename("ROLE_ADMIN").build();
 		ArrayList<Role> roleList = new ArrayList<Role>();
 		roleList.add(role);
 		roleRepository.save(role);
 		User user = User.builder().userid(1).
-				userName("user").password(passwordEncoder.encode("123456")).roles(roleList).build();
+				userName("admin").password(passwordEncoder.encode("123456")).roles(roleList).build();
 		userRepository.save(user);		
 		
 	}

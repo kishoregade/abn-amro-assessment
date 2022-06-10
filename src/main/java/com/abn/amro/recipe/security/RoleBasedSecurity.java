@@ -43,9 +43,9 @@ public class RoleBasedSecurity extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
         auth.inMemoryAuthentication()
-                .withUser("USER")
+                .withUser("admin")
                 .password(passwordEncoder().encode("123456"))
-                .authorities("ROLE_USER");
+                .authorities("ROLE_ADMIN");
     }
     
    
